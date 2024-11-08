@@ -1,0 +1,376 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2b2b4f; /* Deep rich purple */
+  color: #f5f5f5;
+  overflow-x: hidden; /* To prevent horizontal scroll */
+}
+
+.header {
+  background: linear-gradient(90deg, #8e44ad, #2980b9); /* Purple to teal gradient */
+  padding: 10px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: start; /* Align items to the left */
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  border-radius: 50%; /* Makes the image rounded */
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+  object-fit: cover;
+  margin-right: 20px; /* Add margin to separate image from text */
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+.text-content {
+  text-align: center; /* Center text */
+}
+
+header h1, header p, nav ul {
+  margin: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding-bottom: 5px;
+}
+
+header nav ul li a:hover {
+  color: #f1c40f; /* Gold */
+  border-bottom: 2px solid #f1c40f; /* Gold underline on hover */
+}
+.divider {
+  width: 100%;
+  height: 2px;
+  background: #f5f5f5;
+  box-shadow: 0 4px 2px -2px gray;
+  margin: 20px 0;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-logo {
+  width:40 px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-logo:hover {
+  transform: scale(1.2);}
+.progress-container {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.progress-container span {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #f1c40f; /* Gold */
+}
+
+#progress h2 {
+  color: #f1c40f; /* Gold */
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
+footer {
+  background: linear-gradient(90deg, #2980b9, #8e44ad); /* Teal to purple gradient */
+  padding: 10px; /* Adjust padding as needed */
+  color: white;
+  text-align: center;
+  width: 100%; /* No fixed positioning */
+}
+
+
+h1, h2, h3 {
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+  color: #f1c40f; /* Gold */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 1.2em;
+  width: 80%;
+  margin: 20px auto;
+  line-height: 1.6;
+  color: #ecf0f1; /* Light gray */
+}
+
+/* Main Section Styles */
+main {
+  padding: 20px;
+  animation: fadeIn 2s ease-in;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #34495e; /* Dark teal */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-color: #f1c40f; /* Gold */
+    box-shadow: 0 0 8px rgba(241, 196, 15, 0.6); /* Glow effect */
+    outline: none;
+  }
+
+strong {
+  font-weight: bold;
+  color: #f1c40f; /* Gold */
+}
+
+.contact p {
+  font-size: 1.1em;
+  font-style: italic;
+  color: #ecf0f1; /* Light gray */
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  padding: 10px 20px;
+  background-color: #f1c40f; /* Gold */
+  color: #2b2b4f; /* Deep rich purple */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  align-items: center;
+}
+.btn svg {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.btn:hover {
+  background-color: #f39c12; /* Darker gold */
+  transform: scale(1.1);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+    width: 95%;
+  }
+
+  form {
+    width: 95%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f1c40f; /* Gold */
+  color: #2b2b4f; /* Deep rich purple */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #f39c12; /* Darker gold */
+  transform: scale(1.1);
+}
+
+.back-to-top:focus {
+  outline: none;
+}
+/* New container styling for side-by-side layout */
+.flex-container {
+  display: flex;
+  gap: 20px; /* Space between blocks */
+  flex-wrap: wrap; /* Allows blocks to wrap on smaller screens */
+  justify-content: space-between; /* Adjust alignment as needed */
+}
+
+/* Each block styling */
+.flex-container .block {
+  flex: 1;
+  min-width: 200px; /* Minimum width to prevent blocks from shrinking too small */
+  background-color: #34495e; /* Match with your existing theme */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.flex-container .block:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+/* General Section Style */
+.section, .contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(90deg, #8e44ad, #2980b9); /* Purple to teal gradient */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+.section h2, .contact-form h2 {
+  text-align: center;
+  color: #f1c40f; /* Gold */
+}
+
+/* Glowing Effect for Inputs and Textareas */
+.form-group, .section-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group label, .section-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group label i, .section-group label i {
+  margin-right: 10px;
+}
+
+.form-group input, .form-group textarea, .section-group input, .section-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #2b2b4f; /* Deep rich purple */
+  background: #fff;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group input:focus, .form-group textarea:focus, .section-group input:focus, .section-group textarea:focus {
+  border-color: #f1c40f; /* Gold */
+  box-shadow: 0 0 8px rgba(241, 196, 15, 0.6); /* Glow effect */
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  background: #f1c40f; /* Gold */
+  color: #2b2b4f; /* Deep rich purple */
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 10px rgba(241, 196, 15, 0.6); /* Glow effect */
+}
+
+.submit-btn:hover {
+  background: #ffcc00; /* Slightly lighter gold */
+  transform: scale(1.05);
+}
+
+/* Icon and Glow Effect for Sections */
+.section h2 i {
+  margin-right: 10px;
+  color: #f1c40f; /* Gold */
+}
+
